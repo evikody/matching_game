@@ -1,11 +1,10 @@
-# build a guessing game!
+# Import pygame and random interpretators
 import random
-
 import pygame
 
 pygame.init()
 
-# game variables and constants
+# Game variables and constants
 WIDTH = 600
 HEIGHT = 600
 white = (255, 255, 255)
@@ -36,7 +35,11 @@ best_score = 0
 matches = 0
 game_over = False
 
-# create screen
+"""I want to make the game have different modes, so here I will create a new variable for the game modes."""
+mode = None # This will store the game mode, either 'single' or 'multiplayer'
+
+
+# Create screen
 screen = pygame.display.set_mode([WIDTH, HEIGHT])
 pygame.display.set_caption('Matching Game!')
 title_font = pygame.font.Font('freesansbold.ttf', 56)

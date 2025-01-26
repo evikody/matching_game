@@ -78,6 +78,8 @@ def draw_backgrounds():
     screen.blit(best_text, (350, 560))
     return restart_button
 
+# Displays the mode options for the user 
+def draw_mode_selection():
 
 def draw_board():
     global rows
